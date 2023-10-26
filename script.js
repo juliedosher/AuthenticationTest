@@ -10,7 +10,7 @@ function oauthSignIn() {
     form.setAttribute('action', oauth2Endpoint);
   
     // Parameters to pass to OAuth 2.0 endpoint.
-    var params = {'client_id': '268242090257-pveleseck8f2fiu9a2kl84mp4b7krtfe.apps.googleusercontent.com',
+    var params = {'client_id': '268242090257-pveleseck8f2fiu9a2kl84mp4b7krtfe',
                   'redirect_uri': 'https://thankful-meadow-02695d210.3.azurestaticapps.net',
                   'response_type': 'token',
                   'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
