@@ -5,8 +5,8 @@
         <title>Authenticator</title>
 
         <!-- Google OAuth -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
        
-
         <link rel="stylesheet" href="./style.css" type="text/css">
     </head>
 
@@ -14,7 +14,8 @@
         <h1>Authentication Example</h1>
         <h2>Welcome to my simple website using authentication via Google and Github</h2>
         <br><br>
-        <button id="btnGoogleSignIn" onclick="oauthSignIn()">Sign in with Google</button>
+        <button id="btnGoogleSignIn">Sign in with Google</button>
+        <button id="btnSignOut">Log Out</button>
         
     </body>
     <script src="./script.js"></script>
