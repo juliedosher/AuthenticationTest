@@ -1,4 +1,4 @@
-addEventListener(btnGoogleSignIn, oauthSignIn)
+document.getElementById("btnGoogleSignIn").addEventListener("click", oauthSignIn);
 
 function oauthSignIn() {
     // Google's OAuth 2.0 endpoint for requesting an access token
@@ -13,7 +13,7 @@ function oauthSignIn() {
     var params = {'client_id': '268242090257-pveleseck8f2fiu9a2kl84mp4b7krtfe',
                   'redirect_uri': 'https://thankful-meadow-02695d210.3.azurestaticapps.net',
                   'response_type': 'token',
-                  'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
+                  'scope': 'https://www.googleapis.com/auth/userinfo.profile',
                   'include_granted_scopes': 'true',
                   'state': 'pass-through value'};
   
@@ -29,4 +29,5 @@ function oauthSignIn() {
     // Add form to page and submit it to open the OAuth 2.0 endpoint.
     document.body.appendChild(form);
     form.submit();
+    console.log("reached")
   }
