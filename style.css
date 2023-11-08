@@ -13,6 +13,11 @@ a {
     margin-right: 7px;
 }
 
+p {
+    font-size: 15pt;
+    text-align: center;
+}
+
 .loginLinks {
     margin-left: auto;
     margin-right: auto;
